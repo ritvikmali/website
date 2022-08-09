@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freedom Fighters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+        .bg{
+            width: 1536px;
+            height: 1500px;
+        }
+        .header {
+            width: 100%;
+            height: 80px;
+            display: block;
+            box-shadow: 0 5px 10px #504e4e;
+            margin: 0 auto;
+            position: fixed;
+            z-index: 5;
+        }
+
+        .banner {
+            width: 100%;
+            height: 80px;
+            image-rendering: optimizeQuality;
+            text-decoration: none;
+        }
+
+        .logo-l {
+            position: absolute;
+            top: 5px;
+            left: 100px;
+            width: 110px;
+            height: 60px;
+        }
+
+        .ico {
+            position: absolute;
+            top: 2px;
+            left: 20px;
+            width: 50px;
+            height: 70px;
+        }
+
+        .u-img {
+            display: inline-block;
+            position: absolute;
+            top: 12px;
+            right: 120px;
+        }
+
+        .user {
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 25px;
+            right: 40px;
+            font-family: Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 27px;
+            color: orangered;
+            transition: all .5s linear;
+        }
+
+        .user:hover {
+            color: cornflowerblue;
+        }
+
+        .one {
+            display: inline-block;
+            position: absolute;
+            top: 15px;
+            left: 300px;
+            font-size: 25px;
+            color: white;
+            text-decoration: none;
+            font-family: 'Mochiy Pop One', sans-serif;
+            transition: all .5s linear;
+        }
+
+        .one:hover {
+            color: rgb(255, 145, 0);
+        }
+
+        .sec {
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 410px;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            font-family: 'Mochiy Pop One', sans-serif;
+            transition: all .5s linear;
+        }
+
+        .sec:hover {
+            color: rgba(200, 215, 234, 0.906);
+            ;
+        }
+
+        .th {
+            display: inline-block;
+            position: absolute;
+            top: 21px;
+            left: 675px;
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            font-family: 'Mochiy Pop One', sans-serif;
+            transition: all .5s linear;
+        }
+
+        .th:hover {
+            color: rgb(2, 224, 39);
+
+        }
+        .freedom{
+            width: 1536px;
+            height: 500px;
+            image-rendering: auto;
+
+        }
+        .sideS{
+            position: absolute;
+            top: 100px;
+        }
+        .info{
+            position: absolute;
+            display: inline-block;
+            max-width: 1100px;
+            right: 2px;
+            top: 100px;
+            font-size: 20px;
+            font-family: 'Roboto Slab', serif;
+            cursor: context-menu;
+        }
+        .info2{
+            position: absolute;
+            display: inline-block;
+            right: 2px;
+            left: 2px;
+            top: 370px;
+            font-size: 20px;
+            font-family: 'Roboto Slab', serif;
+            cursor: context-menu;
+        }
+        .heading{
+            position: absolute;
+            top: 540px;
+            text-decoration: underline;
+            cursor: context-menu;
+        }
+        .info3{
+            position: absolute;
+            display: inline-block;
+            right: 2px;
+            left: 3px;
+            top: 580px;
+            font-size: 26px;
+            font-family: 'Roboto Slab', serif;
+            cursor: context-menu;
+        }
+        .info3-sub{
+            position: absolute;
+            display: inline-block;
+            left: 35%;
+            top: 580px;
+            font-size: 26px;
+            font-family: 'Roboto Slab', serif;
+            cursor: context-menu;
+        }
+        .bapu-i{
+            width: 300px;
+            z-index: 1;
+            position: absolute;
+            top: 900px;
+        }
+        .bapu-t{
+            display: inline-block;
+            position: absolute;
+            top: 920px;
+            right: 2px; 
+            width: 1200px;
+            font-size: 26px;
+            font-family: 'Roboto Slab', serif;
+            cursor: context-menu;
+        }
+        .bapu-tc{
+            display: inline-block;
+            position: absolute;
+            right: 2px; 
+            left: 5px;
+            top: 1150px;
+            font-size: 26px;
+            font-family: 'Roboto Slab', serif;
+            cursor: context-menu;
+        }
+        .insta_follow{
+            position: absolute;
+            top: 1620px;
+            right: 400px;
+            width: 40px;
+            height: 40px;
+        }
+        .end{
+            position: absolute;
+            top: 1500px;
+            width: 1536px;
+            right: 0px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="header">
+        <img src="page1/banner.jpg" class="banner">
+        <div>
+            <img src="page1/logo.png" class="logo-l">
+            <a href="https://bit.ly/3zKKm3G" target="_blank"><img src="page1/emblem.png" class="ico"></a>
+            <img src="page1/user.png" class="u-img">
+            <a href="index.html" class="one">Home</a>
+            <a href="page2.html" class="sec">INDEPENDENCE Day</a>
+            <a href="page3.html" class="th">Freedom Fighters</a>
+            <a href="https://sdsmcollege.in/" target=”_blank” class="user">SDSM</a>
+        </div>
+    </div>
+<div class="sideS">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="page3/freedom.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="page3/freedom1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="page3/female.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>  
+</div>
+</div>
+<img src="page3\bgpage3.jpg" class="bg">
+
+    <br><p class="info">
+        <font color="cornflowerblue" size="25px">I</font>ndia, the largest democratic nation in the world got independence from foreign rule in 1947. 
+        It was a momentous year in the history of India when it gained freedom from the British rule that lasted for about 100 years. In 1857, 
+        the powers of British East India Company was transferred to the British Crown but the Company which was started as early as in 1600 to build colonisation and trade which gradually imposed its rule in many parts of the country, both economically and politically. 
+        Prior to that many parts of India were under the control of the Portuguese, French and the Dutch. 
+        As the Indian subcontinent had no political unity or unifying force since ancient times, many have come and controlled parts of the country. Prominent and long lasting among them were the Mughals, who ruled most parts of the present country from the 16th century through 18th century.
+    </p>
+
+    <p class="info2">
+        <font color"orange" size="25px">The </font> freedom of India is result of long and consistent struggle in many parts of the country in different forms. 
+        It was neither easy for the country to fight and expel foreign rulers from the country nor easy to unify different princely states, tribes, people fo different languages and cultures in to the idea of one nation. 
+        Many people have played significant roles in raising the national movement. Struggles lasted for decades, which finally resulted in independence of the country.
+    </p>
+
+    <h1 class="heading">The Role of the Freedom Fighters <font color="orange">:</font></h1>
+
+    <font class="info3-sub">The freedom fighters of India played an extensive role in getting independence</font>
+    <p class="info3">
+        <br> for the country. The 'Revolt of 1857' was the first war of independence of India. 
+        The revolt started as a mutiny by the sepoys of the East India Company. 
+        The Muslim and the Hindu sepoys together began this revolt. Rani Lakshmibai, Mangal Pandey, Bahadur Shah Zafar, Nana Sahib and Tatya Tope were some of the active leaders and freedom fighters who fought in the revolt. 
+        Mangal Pandey is considered as the hero in the modern India because he had played a pivotal role in beginning the revolt against the British. Rani Lakshmibai is considered as the symbol of resistance to the British rule and was one of the leading figures of the rebels in 1857.
+    </p>
+
+    <img src="page3/bapu.jpg" class="bapu-i">
+
+    <p class="bapu-t">
+        <font color="green" size="27px">G</font> andhiji's vision of an independent India based on religious pluralism was challenged in the early 1940s by a Muslim nationalism which demanded a separate homeland for Muslims within British India.
+         In August 1947, Britain granted independence, but the British Indian Empire was partitioned into two dominions, a Hindu-majority India and a Muslim-majority Pakistan. As many displaced Hindus, Muslims, and Sikhs made their way to their new lands, 
+         religious 
+    </p>
+
+    <p class="bapu-tc">
+        violence broke out, especially in the Punjab and Bengal. Abstaining from the official celebration of independence, Gandhi visited the affected areas, attempting to alleviate distress. In the months following, he undertook several hunger strikes to stop the religious violence. 
+         The last of these, begun in Delhi on 12 January 1948 when he was 78, also had the indirect goal of pressuring India to pay out some cash assets owed to Pakistan. Although the Government of India relented, as did the religious rioters, 
+         the belief that Gandhi had been too resolute in his defence of both Pakistan and Indian Muslims, especially those besieged in Delhi, spread among some Hindus in India. Among these was Nathuram Godse, a militant Hindu nationalist from western India, 
+        who assassinated Gandhi by firing three bullets into his chest at an interfaith prayer meeting in Delhi on 30 January 1948.
+    </p>
+
+    <div>
+        <img src="page1/end_page1.png" class="end">
+        <a href="https://www.instagram.com/ritvik_mali/" target="_blank"><img src="page1/insta.png" class="insta_follow"></a>
+    </div>
+</body>
+</html>
